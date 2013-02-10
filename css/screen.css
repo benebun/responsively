@@ -1,0 +1,143 @@
+html {
+  background: #fff;
+}
+iframe {
+  border: 0;
+  height: 100%;
+  width: 160%;
+  overflow-x: hidden;
+}
+.desk {
+  background: #d8d8d8;
+  height: 175px;
+  padding: 20px;
+  position: relative;
+  width: 650px;
+}
+.devices {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.devices li:first-child {
+  margin-left: 0;
+}
+.device {
+  float: left;
+  margin: 0 0 0 2em;
+}
+.content {
+  background: #ddd;
+  border-radius: 2px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.bezel,
+.base {
+  background: #383838;
+}
+.bezel {
+  padding: 2%;
+}
+.base {
+  margin: 0 auto;
+}
+#desktop {
+  width: 16em;
+}
+#desktop .bezel {
+  border-radius:.2em;
+  height: 10em;
+}
+.base_middle {
+  height: 1em;
+  width: 20%;
+}
+.base_bottom {
+  height: .5em;
+  width: 34%;
+}
+#laptop {
+  margin: 50px;
+  -webkit-perspective: 400px;
+  perspective: 400px;
+  -webkit-perspective-origin: 50% 0;
+  perspective-origin: 50% 0;
+  transform-style: preserve-3d;
+  width: 145px;
+}
+#laptop .bezel {
+  border-radius:.1em;
+  height: 90px;
+  -webkit-transform: translateZ(-45px);
+          transform: translateZ(-45px);
+}
+#laptop .base {
+  border-radius:.1em;
+  height: 90px;
+  margin-top: 2px;
+  outline: 1px solid transparent;
+  -webkit-transform: rotateX(-90deg) translateZ(-45px);
+          transform: rotateX(-90deg) translateZ(-45px);
+}
+.rotate {
+  transition: transform .5s ease-in-out;
+}
+.rotate iframe {
+  transition: transform .5s ease-in-out;
+}
+.rotate:hover {
+  transform: rotate(90deg);
+}
+.rotate:hover iframe {
+  transform: rotate(-90deg);
+}
+#tablet .bezel {
+  border-radius: .5em;
+  height: 6em;
+  padding: .5em;
+  width: 3.75em;
+}
+#phone {
+  margin-left: 1em;
+}
+#phone .bezel {
+  border-radius: .2em;
+  height: 3em;
+  padding: .2em;
+  width: 1.875em;
+}
+
+/* iframe */
+.responsive {
+  background: #fff;
+  margin: 0;
+  width: 62.5%;
+}
+.responsive .header,
+.responsive .nav,
+.responsive .image {
+  background: #b9b9b9;
+  height: 2em;
+  margin: 0 0 1em;
+}
+.responsive .news li,
+.responsive .teaser li {
+  background: #ddd;
+  height: 1em;
+  width: 33%;
+  margin: 0 0 1em;
+}
+.scrollbar {
+  background: #000;
+  border-radius: 2px;
+  height: 30%;
+  min-width: 1px;
+  opacity: .5;
+  position: absolute;
+  right: 1px;
+  top: 2%;
+  width: 2px;
+}
